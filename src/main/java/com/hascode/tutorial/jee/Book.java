@@ -31,7 +31,8 @@ public class Book {
 	}
 
 	public void setTitle(final String title) {
-		this.title = title;
+		System.out.println("Otra linea de codigo");
+                this.title = title;
 	}
 
 	public String getAuthor() {
