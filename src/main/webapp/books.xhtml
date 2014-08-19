@@ -13,17 +13,17 @@
 		<h:panelGrid columns="2" cellpadding="10">
 			<h:panelGroup>
 				<h1>
-					<ui:insert name="heading">Gustavo Argueta</ui:insert>
+					<ui:insert name="heading">Un simple catalogo de biblioteca</ui:insert>
 				</h1>
 			</h:panelGroup>
 		</h:panelGrid>
-		<h2>#{bookControllerBean.books.size()} Books available:</h2>
+		<h2>#{bookControllerBean.books.size()} Libros disponibles:</h2>
 		<ul>
 			<ui:repeat value="#{bookControllerBean.books}" var="book">
 				<li><h:outputText value="#{book.title} by #{book.author}" /></li>
 			</ui:repeat>
 		</ul>
-		<h2>Create new book:</h2>
+		<h2>Crear Nuevo libro:</h2>
 		<h:messages/>
 		<h:form id="createBookForm">
 			<h:panelGrid columns="3" cellpadding="10">
