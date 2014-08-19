@@ -17,7 +17,7 @@
 				</h1>
 			</h:panelGroup>
 		</h:panelGrid>
-		<h2>#{bookControllerBean.books.size()} Libros disponibles:</h2>
+		<h2>#{bookControllerBean.books.size()} Libros disponibles: calificacion</h2>
 		<ul>
 			<ui:repeat value="#{bookControllerBean.books}" var="book">
 				<li><h:outputText value="#{book.title} by #{book.author}" /></li>
